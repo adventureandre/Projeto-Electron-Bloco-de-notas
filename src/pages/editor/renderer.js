@@ -6,4 +6,5 @@ function notification() {
     new Notification(NOTIFICATION_TITLE, {body: NOTIFICATION_BODY})
         .onclick = () => document.getElementById("text").value = CLICK_MESSAGE
 
+
 }
