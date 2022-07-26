@@ -12,5 +12,13 @@ ipcRenderer.on('set-file', (event,data)=>{
 
 //UPDATE TEXTAREA
 function handleChangeText() {
-ipcRenderer.send('update-content', textarea.value);
+    ipcRenderer.send('update-content', textarea.value);
 }
+
+
+// Cria uma notificaão
+var button = document.getElementById('text');
+
+button.addEventListener('click', function() {
+    notification();
+});
